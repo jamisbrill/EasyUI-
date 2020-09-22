@@ -7,6 +7,13 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JComboBox;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+package GUI;
+
+
+
 
 public class GUI extends JFrame {
 
@@ -110,6 +117,51 @@ public class GUI extends JFrame {
 		JButton btnNewButton_1 = new JButton("Steam");
 		btnNewButton_1.setBounds(0, 172, 128, 89);
 		contentPane.add(btnNewButton_1);
+		
+
+		//JComboBox comboBox = new JComboBox();
+		String[] optionStr = { "Settings", "???" };
+		JComboBox optionList = new JComboBox(optionStr);
+		optionList.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				
+				
+				System.out.println("test");
+				
+			}
+		});
+		optionList.setSelectedIndex(1);
+	//	optionList.addActionListener(this);
+		
+		
+		
+		
+		optionList.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		optionList.setBounds(257, 228, 79, 22);
+		contentPane.add(optionList);
+		
+		JButton Cogbtn = new JButton("Cog Icon ");
+		Cogbtn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				
+				// run the File Selector Multiple times? 
+				// then choose path for each exe you want to run 
+				
+				
+				
+				
+				
+				
+				
+			}
+		});
+		Cogbtn.setBounds(345, 228, 89, 23);
+		contentPane.add(Cogbtn);
 	
 	
 	
@@ -129,15 +181,4 @@ public class GUI extends JFrame {
 	
 	
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
