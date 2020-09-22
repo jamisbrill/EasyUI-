@@ -2,6 +2,11 @@ import java.io.IOException;
 
 public class RunApp {
 
+public	String Spotifypath = null;
+public	String Youtubepath = null;
+public	String Cemupath = null;
+public	String path = null;
+
 	
 	
 	
