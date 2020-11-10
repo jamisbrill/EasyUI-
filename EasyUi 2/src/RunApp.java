@@ -15,7 +15,7 @@ public	String path = null;
 		{
 		
 		Runtime.getRuntime().exec("C:\\Users\\jamis\\AppData\\Roaming\\Spotify\\Spotify.exe");
-
+		System.out.println("Spotify has launched");
 		}
 		catch (Exception e) {
 			
